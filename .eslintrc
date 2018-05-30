@@ -1,0 +1,16 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  node: true
+  jest: true
+parser: babel-eslint
+plugins:
+  - prettier
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - prettier
+rules:
+  no-console: 2
+  react/display-name: 0

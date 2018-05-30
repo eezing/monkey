@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "dev": "PORT=3000 nodemon --watch src ./src",
+    "pretty": "prettier --write '**/*.js'",
+    "test": "npm run test:jest && npm run test:lint",
+    "test:watch": "jest --watch --testPathPattern='.*.test.js'",
+    "test:jest": "jest --coverage --testPathPattern='.*.test.js'",
+    "test:lint": "eslint ./ --ext .js --ext .mjs",
+    "test:gitunstaged": "if ! [[ -z $(git diff) ]]; then echo \"tree has un-staged changes\"; exit 1; fi",
+    "precommit": "npm run test:gitunstaged && npm test",
+    "build": "pkg src/bin.js --out-path build"
+  },
+  "name": "monkey",
+  "version": "1.0.0",
+  "author": "Eric Zingeeler",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "husky": "^0.14.3",
+    "jest": "^23.0.1",
+    "prettier": "^1.12.1"
+  },
+  "dependencies": {
+    "js-yaml": "^3.11.0",
+    "minimist": "^1.2.0"
+  },
+  "description": "Command line text file templating using JavaScript placeholders. It's [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) without the (``).",
+  "main": "src/index.js",
+  "license": "MIT"
+}
