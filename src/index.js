@@ -39,6 +39,7 @@ function loadTemplate(filePath) {
 }
 
 function compile(template, context) {
+  template = template.replace('\\', '\\\\');
   const script = new vm.Script('`' + template + '`');
   return script.runInNewContext(context);
 }

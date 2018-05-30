@@ -1,2 +1,2 @@
-hello ${foo}
+hello ${foo} \
 I like ${bar}
