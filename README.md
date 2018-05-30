@@ -11,7 +11,7 @@ Command line text file templating using JavaScript placeholders. It's [template 
 3.  Run build command: `npm run build`
 4.  Copy binary to user bin (mac osx): `cp build/bin-macos /usr/local/bin/monkey`
 
-## Usage
+### Usage
 
 1.  Create Files
 
