@@ -137,11 +137,11 @@ I am ${baz}
 command
 
 ```bash
-$ monkey \\
-    -c contextA.yaml \\
-    -c contextB.json \\
-    -c contextC.js   \\
-    -t template.txt  \\
+$ monkey \
+    -c contextA.yaml \
+    -c contextB.json \
+    -c contextC.js   \
+    -t template.txt  \
     -o result.txt
 ```
 
