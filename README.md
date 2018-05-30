@@ -1,4 +1,4 @@
-# monkey-do
+# monkey
 
 Command line text file templating using JavaScript placeholders. It's [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) without the (``).
 
