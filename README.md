@@ -6,8 +6,9 @@ Command line text file templating using JavaScript placeholders. It's [template 
 
 1.  Install Node.js version 8.x.x or later
 2.  Install pkg for bulding the binary: `npm install -g pkg`
-3.  Run build command: `npm run build`
-4.  Copy binary to user bin (mac osx): `cp build/bin-macos /usr/local/bin/monkey`
+3.  Install project deps: `npm install`
+4.  Run build command: `npm run build`
+5.  Copy binary to user bin (mac osx): `cp build/bin-macos /usr/local/bin/monkey`
 
 ## Usage
 
