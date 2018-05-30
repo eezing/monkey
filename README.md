@@ -4,11 +4,9 @@ Command line text file templating using JavaScript placeholders. It's [template 
 
 ## Get Started
 
-1.  Install Node.js version 8.x.x or later
-2.  Install pkg for bulding the binary: `npm install -g pkg`
-3.  Install project deps: `npm install`
-4.  Run build command: `npm run build`
-5.  Copy binary to user bin (mac osx): `cp build/bin-macos /usr/local/bin/monkey`
+1.  Download binary https://github.com/eezing/monkey/releases/latest
+
+2.  Copy binary to user bin (e.g. mac osx): `cp bin-macos /usr/local/bin/monkey`
 
 ## Usage
 
@@ -152,3 +150,15 @@ hello world
 I like turtles
 I am radical
 ```
+
+## Contributing
+
+### Setup
+
+1.  Install Node.js version 8.x.x or later
+2.  Install pkg for bulding the binary: `npm install -g pkg`
+3.  Install project deps: `npm install`
+
+### Build
+
+1.  Run build command: `npm run build`
