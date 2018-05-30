@@ -8,7 +8,7 @@
     "test:lint": "eslint ./ --ext .js --ext .mjs",
     "test:gitunstaged": "if ! [[ -z $(git diff) ]]; then echo \"tree has un-staged changes\"; exit 1; fi",
     "precommit": "npm run test:gitunstaged && npm test",
-    "build": "pkg src/bin.js --out-path build"
+    "build": "npm run precommit && pkg src/bin.js --out-path build"
   },
   "name": "monkey",
   "version": "1.0.0",
